@@ -3,17 +3,22 @@ Compatibilidade do Logisim e Java
 
 Resumo rápido de compatibilidade:
 ---------------------------------
-Logisim 4.0  |  Runtime 65.0  |  Java 21
-Logisim 3.9  |  Runtime 64.0  |  Java 20
-Logisim 3.8  |  Runtime 63.0  |  Java 19
-Logisim 3.7  |  Runtime 62.0  |  Java 18
-Logisim 3.6  |  Runtime 61.0  |  Java 17
-Logisim 3.5  |  Runtime 60.0  |  Java 16
-Logisim 3.4  |  Runtime 59.0  |  Java 15
-Logisim 3.3  |  Runtime 58.0  |  Java 14
-Logisim 3.2  |  Runtime 57.0  |  Java 13
-Logisim 3.1  |  Runtime 56.0  |  Java 12
-Logisim 3.0  |  Runtime 55.0  |  Java 11
+
+| Versão do Java | Número de Versão do Arquivo de Classe |
+| -------------- | ------------------------------------- |
+| Java 11        | 55.0                                  |
+| Java 12        | 56.0                                  |
+| Java 13        | 57.0                                  |
+| Java 14        | 58.0                                  |
+| Java 15        | 59.0                                  |
+| Java 16        | 60.0                                  |
+| Java 17        | 61.0                                  |
+| Java 18        | 62.0                                  |
+| Java 19        | 63.0                                  |
+| Java 20        | 64.0                                  |
+| Java 21        | 65.0                                  |
+| Java 22        | 66.0                                  |
+| Java 23        | 67.0                                  |
 
 ------------------------------------------
 Possível erro: versão incompatível do Java
@@ -21,13 +26,17 @@ Possível erro: versão incompatível do Java
 
 Se ao tentar executar o programa aparecer uma mensagem de erro parecida com:
 
-    Java Runtime (class file version 65.0)
+    Exception in thread "main" java.lang.UnsupportedClassVersionError: com/cburch/logisim/Main has been compiled by a more recent version of the Java Runtime (class file version 53.0), this version of the Java Runtime only recognizes class file versions up to 52.0
 
 Isso significa que a versão do Java instalada no seu computador é mais antiga do que a necessária para rodar o programa.
 
 ------------------------------------------
 O que isso quer dizer?
 ------------------------------------------
+
+Neste exemplo, onde fica indicado "(class file version 53.0)" é a versão do runtime do programa.
+E onde está indicado "class file versions up to 52.0" é a versão instalada na máquina
+
 O número “class file version” indica com qual versão do Java o programa foi compilado.
 
 Por exemplo:
@@ -43,7 +52,7 @@ Por exemplo:
 - Versão 56.0 corresponde ao Java 12
 - Versão 55.0 corresponde ao Java 11
 
-Ou seja, se o erro indicar “65.0”, você precisa ter o **Java JDK 21 ou superior** instalado.
+Ou seja, se o erro indicar “class file version 65.0”, você precisa ter o **Java JDK 21 ou superior** instalado.
 
 ------------------------------------------
 Como verificar sua versão do Java
