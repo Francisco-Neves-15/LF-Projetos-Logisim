@@ -1,0 +1,40 @@
+Como executar um arquivo .jar
+-----------------------------
+
+Foi disponibilizado arquivos executáveis para cada sistema operacional, já executam o programa .jar, mas leia esse arquivo para entender o que está sendo feito.
+
+-----------------------------
+
+Para executar um arquivo .jar, é necessário usar um comando específico no Terminal (macOS/Linux) ou no Prompt de Comando (CMD) do Windows.
+
+O arquivo do Logisim Evolution não possui uma interface executável diretamente — ou seja, clicar duas vezes sobre ele não iniciará o programa.
+
+Por isso, é preciso executá-lo usando o comando do Java (JAR Runner).
+
+----------------------------------
+WINDOWS (CMD)
+----------------------------------
+1. Abra o Prompt de Comando.
+2. Navegue até a pasta onde está o arquivo .jar:
+   cd caminho\para\pasta\do\jar
+
+3. Em seguida, execute o comando:
+   java -jar logisim-evolution-VERSAO.jar
+
+Dica: você pode digitar "java -jar" e pressionar TAB para completar automaticamente o nome do arquivo (se disponível no diretório).
+
+Se o arquivo estiver dentro de uma subpasta, use:
+   java -jar versoes\logisim-evolution-VERSAO.jar
+
+----------------------------------
+LINUX / macOS (Terminal)
+----------------------------------
+1. Abra o Terminal.
+2. Vá até a pasta onde está o arquivo .jar:
+   cd /caminho/para/pasta/do/jar
+
+3. Execute o comando:
+   java -jar logisim-evolution-VERSAO.jar
+
+Ou, se o arquivo estiver em uma subpasta:
+   java -jar versoes/logisim-evolution-VERSAO.jar
