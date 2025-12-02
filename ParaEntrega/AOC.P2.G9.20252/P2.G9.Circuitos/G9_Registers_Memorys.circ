@@ -40,12 +40,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#G9_Components_Basics.circ" name="12">
-    <tool name="Shifter_3op_4b">
-      <a name="facing" val="east"/>
-    </tool>
-  </lib>
-  <lib desc="file#G9_TriState_Buffers_Inverters.circ" name="13">
+  <lib desc="file#G9_TriState_Buffers_Inverters.circ" name="12">
     <tool name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </tool>
@@ -54,6 +49,11 @@
     </tool>
     <tool name="Buffer_TriState_AH_4b">
       <a name="facing" val="south"/>
+    </tool>
+  </lib>
+  <lib desc="file#G9_Components_Basics.circ" name="13">
+    <tool name="Shifter_3op_4b">
+      <a name="facing" val="east"/>
     </tool>
   </lib>
   <main name="Latch_Master_1b"/>
@@ -1159,6 +1159,36 @@
     <a name="circuit" val="MBR_4b_Pure"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect height="4" stroke="none" width="10" x="50" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">D</text>
+      <rect height="4" stroke="none" width="10" x="50" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="84">EEXIT</text>
+      <rect height="3" stroke="none" width="10" x="50" y="99"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="104">Clk</text>
+      <rect height="3" stroke="none" width="10" x="50" y="119"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="124">E</text>
+      <rect height="3" stroke="none" width="10" x="50" y="139"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="144">Rd</text>
+      <rect height="3" stroke="none" width="10" x="50" y="159"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="164">Wr</text>
+      <rect height="4" stroke="none" width="10" x="260" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="64">S</text>
+      <rect height="4" stroke="none" width="10" x="260" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="84">SEXIT</text>
+      <rect height="20" stroke="none" width="200" x="60" y="170"/>
+      <rect fill="none" height="140" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="184">MBR_4b_Pure</text>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="100,200" x="50" y="100"/>
+      <circ-port dir="in" pin="100,240" x="50" y="120"/>
+      <circ-port dir="in" pin="100,460" x="50" y="140"/>
+      <circ-port dir="in" pin="100,490" x="50" y="160"/>
+      <circ-port dir="in" pin="130,140" x="50" y="80"/>
+      <circ-port dir="in" pin="130,60" x="50" y="60"/>
+      <circ-port dir="out" pin="130,650" x="270" y="60"/>
+      <circ-port dir="out" pin="130,730" x="270" y="80"/>
+    </appear>
     <comp lib="0" loc="(100,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Clk"/>
@@ -1251,56 +1281,56 @@
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="12" loc="(180,520)" name="Handler_4op_to_3op"/>
-    <comp lib="12" loc="(220,460)" name="Decoder_4op_1b_2x4"/>
-    <comp lib="13" loc="(1040,390)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1040,390)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1100,350)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1100,350)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1160,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1160,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1220,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1220,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1340,390)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1340,390)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(1400,350)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(1400,350)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(260,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(260,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(320,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(320,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(440,390)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(440,390)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(500,350)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(500,350)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(560,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(560,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(620,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(620,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(740,390)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(740,390)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(800,350)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(800,350)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(860,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(860,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(920,280)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(920,280)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
+    <comp lib="13" loc="(180,520)" name="Handler_4op_to_3op"/>
+    <comp lib="13" loc="(220,460)" name="Decoder_4op_1b_2x4"/>
     <comp lib="4" loc="(1270,290)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -1508,6 +1538,7 @@
       <polygon fill-opacity="0.000" points="55,30 60,39 65,30" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="90,101 90,108" stroke="#000000" stroke-width="3"/>
       <polyline fill="none" points="138,60 131,60" stroke="#000000" stroke-width="3"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="middle" x="88" y="73">MBR</text>
       <circ-anchor facing="east" x="140" y="60"/>
       <circ-port dir="in" pin="100,200" x="60" y="20"/>
       <circ-port dir="in" pin="100,240" x="80" y="20"/>
@@ -1589,8 +1620,8 @@
       <a name="label" val="Wr"/>
     </comp>
     <comp lib="1" loc="(160,220)" name="AND Gate"/>
-    <comp lib="12" loc="(180,360)" name="Handler_4op_to_3op"/>
-    <comp lib="12" loc="(220,300)" name="Decoder_4op_1b_2x4"/>
+    <comp lib="13" loc="(180,360)" name="Handler_4op_to_3op"/>
+    <comp lib="13" loc="(220,300)" name="Decoder_4op_1b_2x4"/>
     <comp loc="(260,350)" name="Handler_MBR">
       <a name="facing" val="south"/>
     </comp>
@@ -1808,19 +1839,19 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="13" loc="(150,310)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(150,310)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="13" loc="(210,310)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(210,310)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="13" loc="(380,210)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(380,210)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="13" loc="(420,270)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(420,270)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="13" loc="(460,180)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(460,180)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="4" loc="(290,250)" name="D Flip-Flop">
@@ -2092,10 +2123,10 @@
       <a name="facing" val="south"/>
       <a name="label" val="E1"/>
     </comp>
-    <comp lib="13" loc="(120,150)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(120,150)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(120,90)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(120,90)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="north"/>
     </comp>
     <wire from="(120,110)" to="(120,120)"/>
@@ -2284,13 +2315,13 @@
     <comp lib="1" loc="(400,960)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="12" loc="(260,180)" name="Decoder_8op_3x8">
+    <comp lib="13" loc="(260,180)" name="Decoder_8op_3x8">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="12" loc="(610,180)" name="Decoder_8op_3x8">
+    <comp lib="13" loc="(610,180)" name="Decoder_8op_3x8">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="12" loc="(870,180)" name="Decoder_8op_3x8">
+    <comp lib="13" loc="(870,180)" name="Decoder_8op_3x8">
       <a name="facing" val="south"/>
     </comp>
     <comp loc="(480,1010)" name="Register_4b">
@@ -2560,37 +2591,37 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="12" loc="(170,190)" name="A_Decoder_2op_1b_1x2"/>
-    <comp lib="13" loc="(230,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(230,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(280,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(280,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(330,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(330,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(380,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(380,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(470,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(470,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(520,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(520,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(570,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(570,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(620,260)" name="Buffer_TriState_AH_1b">
+    <comp lib="12" loc="(620,260)" name="Buffer_TriState_AH_1b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(720,260)" name="Buffer_TriState_AH_4b">
+    <comp lib="12" loc="(720,260)" name="Buffer_TriState_AH_4b">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="13" loc="(780,260)" name="Buffer_TriState_AH_4b">
+    <comp lib="12" loc="(780,260)" name="Buffer_TriState_AH_4b">
       <a name="facing" val="south"/>
     </comp>
+    <comp lib="13" loc="(170,190)" name="A_Decoder_2op_1b_1x2"/>
     <comp lib="5" loc="(740,350)" name="Hex Digit Display"/>
     <comp lib="5" loc="(800,350)" name="Hex Digit Display"/>
     <wire from="(130,250)" to="(140,250)"/>
