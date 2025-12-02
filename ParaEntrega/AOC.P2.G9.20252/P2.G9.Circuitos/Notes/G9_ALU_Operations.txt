@@ -1,0 +1,10 @@
+ULA2 = Q18, ULA1 = Q17, ULA0 = Q16
+
+000 = Add
+001 = Div
+010 = Mul
+011 = Nand
+100 = Nor
+101 = Sub
+110 = Xnor
+111 = Xor

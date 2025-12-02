@@ -1,0 +1,38 @@
+Instruções Humanas
+
+00 (00000)  Add R0,R1
+01 (00001)  Div R0,R1
+02 (00010)  Mul R0,R1
+03 (00011)  Nand R0,R1
+04 (00100)  Nor R0,R1
+05 (00101)  Sub R0,R1
+06 (00110)  Xnor R0,R1
+07 (00111)  Xor R0,R1
+
+08 (01000)  Mov R0,R1   ; R0 <- R1
+09 (01001)  Mov R0,R2
+0A (01010)  Mov R0,R3
+0B (01011)  Mov R0,R4
+0C (01100)  Mov R0,R5
+0D (01101)  Mov R0,R6
+0E (01110)  Mov R0,R7
+0F (01111)  NOP / Mov R0,R0 (no-op)
+
+10 (10000)  Mov R1,R0   ; R1 <- R0
+11 (10001)  Mov R2,R0
+12 (10010)  Mov R3,R0
+13 (10011)  Mov R4,R0
+14 (10100)  Mov R5,R0
+15 (10101)  Mov R6,R0
+16 (10110)  Mov R7,R0
+17 (10111)  NOP / Mov R0,R0
+
+18 (11000)  Mov MBR,R0   ; MBR <- R0   (move register to MBR)
+19 (11001)  Mov R2,MBR   ; R2 <- MBR
+1A (11010)  Mov R0,MBR   ; R0 <- MBR
+1B (11011)  In           ; (input -> R0 or MBR depending on design) *
+1C (11100)  Out          ; (output from R0)
+1D (11101)  NOP
+1E (11110)  NOP
+1F (11111)  NOP
+

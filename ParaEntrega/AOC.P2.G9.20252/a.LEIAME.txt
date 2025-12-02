@@ -1,0 +1,7 @@
+Grupo:
+- Luiz Francisco Neves Mendes
+- Breno Ferracini
+
+Leia o arquivo "Instruções de Uso" para instalar e executa o Logisim Evolution
+
+Caso haja interesse em abrir os arquivos ".circ", principalmente a CPU, GARANTA que todos os outros arquivos estão na mesma pasta, já que são importados como bibliotecas, não estão em um único arquivo.

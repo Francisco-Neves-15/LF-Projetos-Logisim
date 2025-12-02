@@ -1,0 +1,7 @@
+Estou estudando o funcionamento das CPU's, pois, para um projeto final onde estudo, terei que construir a parte lógica de uma CPU.
+
+Para isso, preciso entender o seu funcionamento.
+
+Tenho uma boa noção sobre portas-logicas, expressoes, tabelas, etc.
+
+Aos poucos, irei comuniar o que pretendo estudar sobre.

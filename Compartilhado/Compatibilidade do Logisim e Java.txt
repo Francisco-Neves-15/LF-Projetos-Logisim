@@ -1,0 +1,100 @@
+Compatibilidade do Logisim e Java
+---------------------------------
+
+Resumo rápido de compatibilidade:
+---------------------------------
+
+| Versão do Java | Número de Versão do Arquivo de Classe |
+| -------------- | ------------------------------------- |
+| Java 11        | 55.0                                  |
+| Java 12        | 56.0                                  |
+| Java 13        | 57.0                                  |
+| Java 14        | 58.0                                  |
+| Java 15        | 59.0                                  |
+| Java 16        | 60.0                                  |
+| Java 17        | 61.0                                  |
+| Java 18        | 62.0                                  |
+| Java 19        | 63.0                                  |
+| Java 20        | 64.0                                  |
+| Java 21        | 65.0                                  |
+| Java 22        | 66.0                                  |
+| Java 23        | 67.0                                  |
+
+------------------------------------------
+Possível erro: versão incompatível do Java
+------------------------------------------
+
+Se ao tentar executar o programa aparecer uma mensagem de erro parecida com:
+
+    Exception in thread "main" java.lang.UnsupportedClassVersionError: com/cburch/logisim/Main has been compiled by a more recent version of the Java Runtime (class file version 53.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+
+Isso significa que a versão do Java instalada no seu computador é mais antiga do que a necessária para rodar o programa.
+
+------------------------------------------
+O que isso quer dizer?
+------------------------------------------
+
+Neste exemplo, onde fica indicado "(class file version 53.0)" é a versão do runtime do programa.
+E onde está indicado "class file versions up to 52.0" é a versão instalada na máquina
+
+O número “class file version” indica com qual versão do Java o programa foi compilado.
+
+Por exemplo:
+- Versão 65.0 corresponde ao Java 21
+- Versão 64.0 corresponde ao Java 20
+- Versão 63.0 corresponde ao Java 19
+- Versão 62.0 corresponde ao Java 18
+- Versão 61.0 corresponde ao Java 17
+- Versão 60.0 corresponde ao Java 16
+- Versão 59.0 corresponde ao Java 15
+- Versão 58.0 corresponde ao Java 14
+- Versão 57.0 corresponde ao Java 13
+- Versão 56.0 corresponde ao Java 12
+- Versão 55.0 corresponde ao Java 11
+
+Ou seja, se o erro indicar “class file version 65.0”, você precisa ter o **Java JDK 21 ou superior** instalado.
+
+------------------------------------------
+Como verificar sua versão do Java
+------------------------------------------
+Antes de atualizar, você pode verificar qual versão do Java está instalada em seu computador:
+
+No Windows (CMD):
+    java -version
+
+No Linux ou macOS (Terminal):
+    java -version
+
+O comando exibirá algo como:
+    openjdk version "21.0.1" 2023-10-17
+O primeiro número (“21” neste exemplo) indica a versão instalada.
+
+------------------------------------------
+JDK vs Runtime (JRE)
+------------------------------------------
+- **JDK (Java Development Kit)**: pacote completo do Java — inclui o compilador, ferramentas e o **Runtime (JRE)**.
+- **JRE (Java Runtime Environment)**: é apenas o ambiente necessário para executar programas Java.
+
+Atualmente, o JDK já inclui o JRE, então basta instalar o **JDK** para rodar o programa.
+
+------------------------------------------
+Como corrigir
+------------------------------------------
+1. Baixe e instale uma versão atualizada do Java (JDK).
+2. Após instalar, tente novamente executar o comando:
+   java -jar logisim-evolution-VERSAO.jar
+3. Caso o computador peça autorização de administrador e você não consiga instalar o JDK,
+   uma alternativa é baixar uma **versão mais antiga do Logisim Evolution**, compatível com
+   versões anteriores do Java (por exemplo, Java 17 ou Java 11).
+
+------------------------------------------
+Links úteis
+------------------------------------------
+- Página oficial do Logisim Evolution:
+  https://github.com/logisim-evolution/logisim-evolution/releases
+
+- Download das versões do JDK (site oficial da Oracle):
+  https://www.oracle.com/java/technologies/javase-downloads.html
+
+- Alternativa (OpenJDK, versão gratuita e aberta):
+  https://adoptium.net/temurin/releases/

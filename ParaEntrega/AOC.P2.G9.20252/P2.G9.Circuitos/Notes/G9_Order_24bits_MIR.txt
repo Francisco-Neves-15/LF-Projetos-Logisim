@@ -1,0 +1,29 @@
+ORDEM FINAL DOS 24 BITS DO MIR (Q0 → Q23)
+
+Bit menos significativo = Q0 (direita)
+Bit mais significativo = Q23 (esquerda)
+
+Q23  X3
+Q22  X2
+Q21  X1
+Q20  X0
+Q19  AMUX
+Q18  ULA2
+Q17  ULA1
+Q16  ULA0
+Q15  SH1
+Q14  SH0
+Q13  MAR
+Q12  MBR
+Q11  Rd
+Q10  Wr
+Q9   BR
+Q8   DECD_C2
+Q7   DECD_C1
+Q6   DECD_C0
+Q5   DECD_A2
+Q4   DECD_A1
+Q3   DECD_A0
+Q2   DECD_B2
+Q1   DECD_B1
+Q0   DECD_B0
