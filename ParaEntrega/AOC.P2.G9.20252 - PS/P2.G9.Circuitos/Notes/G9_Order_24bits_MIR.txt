@@ -27,3 +27,5 @@ Q3   DECD_A0
 Q2   DECD_B2
 Q1   DECD_B1
 Q0   DECD_B0
+
+X significa não usado.

@@ -1,0 +1,17 @@
+Reset (Ctrl R)
+Clocka (Ctrl T x4)
+
+Teclado = 0010 (2)
+
+IR      = 11011 (In) | Clocka2x
+IR      = 11001 (R1,MBR) | Clocka
+
+Teclado = 0011 (3)
+
+IR      = 11011 (In) | Clocka
+IR      = 11000 (R2,MBR) | Clocka
+
+IR      = 10111 (R1-R2,LatchA-LatchB) | Clocka
+IR      = 00010 (MUL) | Clocka
+
+IR      = 11100 (Out) | Clocka

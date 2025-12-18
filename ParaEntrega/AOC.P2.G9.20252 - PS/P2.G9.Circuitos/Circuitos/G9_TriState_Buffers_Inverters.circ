@@ -161,29 +161,29 @@
       <a name="facing" val="south"/>
       <a name="size" val="20"/>
     </comp>
-    <comp lib="8" loc="(27,261)" name="Text">
+    <comp lib="8" loc="(25,215)" name="Text">
+      <a name="halign" val="left"/>
+      <a name="text" val="Tri-State Buffer (Active High Enable)"/>
+    </comp>
+    <comp lib="8" loc="(25,260)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Ctrl | A | Q (tristate real)"/>
     </comp>
-    <comp lib="8" loc="(27,291)" name="Text">
+    <comp lib="8" loc="(25,290)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 0 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(27,316)" name="Text">
+    <comp lib="8" loc="(25,315)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 1 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(27,341)" name="Text">
+    <comp lib="8" loc="(25,340)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 0 | 0"/>
     </comp>
-    <comp lib="8" loc="(27,366)" name="Text">
+    <comp lib="8" loc="(25,365)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 1 | 1"/>
-    </comp>
-    <comp lib="8" loc="(28,219)" name="Text">
-      <a name="halign" val="left"/>
-      <a name="text" val="Tri-State Buffer (Active High Enable)"/>
     </comp>
     <comp loc="(150,120)" name="Transmission_Gate"/>
     <wire from="(120,150)" to="(130,150)"/>
@@ -229,27 +229,27 @@
     <comp lib="1" loc="(120,150)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="8" loc="(28,219)" name="Text">
+    <comp lib="8" loc="(25,215)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Tri-State Buffer (Active Low Enable)"/>
     </comp>
-    <comp lib="8" loc="(30,261)" name="Text">
+    <comp lib="8" loc="(30,260)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Ctrl | A | Q"/>
     </comp>
-    <comp lib="8" loc="(30,291)" name="Text">
+    <comp lib="8" loc="(30,290)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 0 | 0"/>
     </comp>
-    <comp lib="8" loc="(30,316)" name="Text">
+    <comp lib="8" loc="(30,315)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 1 | 1"/>
     </comp>
-    <comp lib="8" loc="(30,341)" name="Text">
+    <comp lib="8" loc="(30,340)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 0 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(30,366)" name="Text">
+    <comp lib="8" loc="(30,365)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 1 | Z (Hi-Z)"/>
     </comp>
@@ -304,27 +304,27 @@
     <comp lib="1" loc="(150,150)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="8" loc="(28,219)" name="Text">
+    <comp lib="8" loc="(25,215)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Tri-State Inverter (Active High Enable)"/>
     </comp>
-    <comp lib="8" loc="(31,260)" name="Text">
+    <comp lib="8" loc="(30,260)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Ctrl | A | Q"/>
     </comp>
-    <comp lib="8" loc="(31,290)" name="Text">
+    <comp lib="8" loc="(30,290)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 0 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(31,315)" name="Text">
+    <comp lib="8" loc="(30,315)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 1 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(31,340)" name="Text">
+    <comp lib="8" loc="(30,340)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 0 | 1"/>
     </comp>
-    <comp lib="8" loc="(31,365)" name="Text">
+    <comp lib="8" loc="(30,365)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 1 | 0"/>
     </comp>
@@ -377,27 +377,27 @@
     <comp lib="1" loc="(150,150)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="8" loc="(28,219)" name="Text">
+    <comp lib="8" loc="(25,215)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Tri-State Inverter (Active Low Enable)"/>
     </comp>
-    <comp lib="8" loc="(29,272)" name="Text">
+    <comp lib="8" loc="(25,270)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="Ctrl | A | Q"/>
     </comp>
-    <comp lib="8" loc="(29,302)" name="Text">
+    <comp lib="8" loc="(25,300)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 0 | 1"/>
     </comp>
-    <comp lib="8" loc="(29,327)" name="Text">
+    <comp lib="8" loc="(25,325)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="0 | 1 | 0"/>
     </comp>
-    <comp lib="8" loc="(29,352)" name="Text">
+    <comp lib="8" loc="(25,350)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 0 | Z (Hi-Z)"/>
     </comp>
-    <comp lib="8" loc="(29,377)" name="Text">
+    <comp lib="8" loc="(25,375)" name="Text">
       <a name="halign" val="left"/>
       <a name="text" val="1 | 1 | Z (Hi-Z)"/>
     </comp>

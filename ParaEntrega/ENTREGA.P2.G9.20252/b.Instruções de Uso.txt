@@ -1,0 +1,61 @@
+# Passo a passo para instalar Java 21 no Mac
+
+Importante levar em conta a versão do mac usado, podendo não ser compatível.
+
+## 1. Baixar o JDK 21 compatível com Mac
+
+- Acesse a página oficial de downloads de Java (por exemplo via Adoptium ou o site oficial da Oracle) e baixe o instalador para macOS.
+(https://docs.oracle.com/en/java/javase/21/install/installation-jdk-macos.html)
+
+- Escolha o arquivo certo de acordo com a arquitetura do Mac:
+-- Para processadores Intel → .dmg ou .tar.gz “macos-x64”.
+-- Para Apple Silicon (M1/M2 etc) → versão “macos-aarch64”. 
+
+## 2. Instalar o JDK
+
+- Após download, abra o arquivo ".dmg".
+
+- Dentro dele, dê um duplo-clique em JDK 21.pkg e siga os passos do instalador: Continue → Install → inserir senha de administrador → aguarde a instalação.
+
+## 3. Verificar se o Java foi instalado corretamente
+
+- Abra o “Terminal” do macOS.
+
+- Digite:
+```
+java --version
+```
+
+- Deve aparecer algo como “java 21 …” — confirmando que o JDK 21 está ativo.
+
+- (Opcional) Para garantir que o sistema “apontou” para o novo JDK, pode definir a variável de ambiente JAVA_HOME. Exemplo para usuário de shell zsh (padrão em macOS recentes):
+```
+echo 'export JAVA_HOME=$(/usr/libexec/java_home)' >> ~/.zshenv
+source ~/.zshenv
+```
+
+# Como rodar o Logisim-Evolution a partir do JAR
+
+Depois de ter o Java 21 instalado corretamente, faça o seguinte:
+
+- Baixe o arquivo .jar do Logisim-Evolution — no repositório oficial.
+(https://github.com/logisim-evolution/logisim-evolution/releases)
+
+- No Terminal, vá até a pasta onde o .jar está salvo.
+
+Execute no Terminal:
+```
+java -jar logisim-evolution-<versão>-all.jar
+```
+(substitua <versão> pela versão que baixou).
+
+RECOMENDO A VERSÃO → v3.9.0 ←
+
+- Se quiser, também pode usar o instalador ".dmg" disponibilizado para macOS — mas atenção: 
+segundo o repositório, se for a primeira vez abrindo o app, pode haver um aviso do macOS, exigindo que use “Open → Open with…” ou segurando Ctrl + clique, já que o app não é assinado por certificado da Apple. 
+
+# Notas / Cuidados
+
+- O JDK 21 suporta macOS desde que o sistema e a arquitetura do Mac sejam compatíveis. 
+
+- Não remova versões antigas de Java manualmente — se quiser remover depois, exclua a pasta correspondente em "/Library/Java/JavaVirtualMachines/".
